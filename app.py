@@ -8,7 +8,7 @@ app = Flask(__name__)
 def healthcheck():
     response = app.response_class(
             response=json.dumps({"result":"OK - healthy"}),
-            status=200,
+            status=200, 
             mimetype='application/json'
     )
     app.logger.info('Status request successfull')
